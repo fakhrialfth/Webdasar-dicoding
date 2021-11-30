@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', 'Sans-serif';
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: #3b5998;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.header-left {
+    float: left;
+    margin-top: 23px;
+    margin-right: -10px;
+}
+
+.header-right {
+    float: right;
+    margin-right: -25px;
+}
+
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.clear {
+    clear: left;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(assets/images/01.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.top-wrapper h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.top-wrapper p {
+    margin-bottom: 3px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-wrapper p {
+    margin:  10px 0;
+}
+
+.signup {
+    background-color: #fc7e2a;
+}
+
+.facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+}
+
+.twitter {
+    background-color: #55acee;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.featured-image {
+    width: 150px;
+}
+
+.lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.lesson {
+    float: left;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lesson-icon {
+    position: relative;
+}
+
+.lesson-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+}
+
+.txt-content {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.header {
+    font-size: 32px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.profile-wrapper {
+    padding: 40px 0 80px 0;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: auto;
+}
+
+.profile {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #3b5998;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 0.2);
+}
+
+.profile:before,
+.profile::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #3b5998;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.profile:hover:before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile .profile-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.profile:hover .profile-icon {
+    bottom: 80px;
+}
+
+.profile .profile-icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile .name {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.profile .name h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.profile .name p {
+    color: #fff;
+}
+
+aside {
+    text-align: center;
+}
+
+.header-aside h3 {
+    font-size: 32px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    border-radius: 50px;
+    bottom: 24px;
+    right: 32px;
+    font-size: 2.5em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #3b5998;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    z-index: 99;
+}
+
+#topBtn:hover {
+    cursor: pointer;
+    color: #3b5998;
+    background-color: rgb(201, 201, 201);
+}
+
+#topBtn:active {
+    background-color: #555;
+}
+
+#topBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #3b5998;
+    text-align: center;
+    font-weight: bold;
+}
